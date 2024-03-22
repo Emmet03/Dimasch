@@ -1,0 +1,196 @@
+body {
+    background-image: url('../Data/Img/pergament.jpg');
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2edd7;
+}
+
+input[type="number"] {
+    width: 40px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+    width: 1em;
+    height: 1em;
+    background-image: url('../Data/Img/arrow.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+.PlayerContainer, .GameContainer {
+    background-image: url('../Data/Img/pergament2.jpg');
+    background-color: #e0c692;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.PlayerContainer {
+    width: 25%;
+    min-width: 25%;
+    max-width: 100%;
+    min-height: 50%;
+    resize: both;
+    overflow: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .Container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .PlayerContainer, .GameContainer {
+        width: calc(100% - 40px);
+        margin-bottom: 20px;
+        resize: none;
+    }
+}
+
+.SinglePlayerCard {
+    margin-bottom: 20px;
+    background-color: #e0c695a0;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.PlayerName, .NameOutput {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.Attributes {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+
+.Attribute {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 1px;
+    background-color: #996c1117;
+}
+
+.Attribute input[type="number"] {
+    width: 40px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+}
+
+.UpperGame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.DiceContainer {
+    background-color: #cbac6f47;
+    padding: 15px;
+    border-radius: 5px;
+    width: 35%;
+}
+
+.MiddleMdNotes {
+    background-image: url('../Data/Img/pergament.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    min-height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#markdownInput {
+    width: 100%;
+    font-family: Blackadder ITC;
+    font-size: 150%;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+.LowerEnemyContainer {
+    background-color: #e0c69557;
+    padding: 5%;
+    padding-left: 0%;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.343);
+    border-radius: 5px;
+}
+
+.LowerEnemyContainer .Btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Btn {
+    background-color: #8c6239e4;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    font-size: 16px;
+}
+
+.Btn:hover {
+    background-color: #634129e7;
+}
+
+.Btn:active {
+    background-color: #8c6239;
+    transform: scale(0.95);
+}
+
+.Lebenspunkte {
+    display: flex;
+    align-items: center;
+}
+
+.TextIdentifier {
+    margin-right: 5px;
+}
+
+#SpeciesSelector {
+    margin-top: 10px;
+}
+
+.Tools {
+    margin-top: 10px;
+}
